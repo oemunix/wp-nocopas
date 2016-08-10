@@ -31,6 +31,16 @@ if (document.captureEvents) document.captureEvents(Event.MOUSEDOWN);
     e.preventDefault();		
   }
 </script>
+<style>
+body {
+	line-height: 1;
+-webkit-user-select: none;  /* Chrome all / Safari all */
+-moz-user-select: none;     /* Firefox all */
+-ms-user-select: none;      /* IE 10+ */
+-o-user-select: none;
+user-select: none;
+}
+</style>
 <?php } 
 add_action('wp_footer', 'oem_rightclick');
 ?>
